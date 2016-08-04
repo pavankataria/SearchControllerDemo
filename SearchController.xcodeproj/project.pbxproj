@@ -25,6 +25,7 @@
 		056E201A1D53A5570072592F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E20191D53A5570072592F /* SearchViewModel.swift */; };
 		056E201E1D53B1F40072592F /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E201C1D53B1F40072592F /* SearchResultsView.swift */; };
 		056E201F1D53B1F40072592F /* SearchResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056E201D1D53B1F40072592F /* SearchResultsView.xib */; };
+		056E20211D53B28D0072592F /* SearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E20201D53B28D0072592F /* SearchResultsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		056E20191D53A5570072592F /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = ViewControllers/SearchView/SearchViewModel.swift; sourceTree = "<group>"; };
 		056E201C1D53B1F40072592F /* SearchResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsView.swift; path = ViewControllers/SearchResultsView/SearchResultsView.swift; sourceTree = "<group>"; };
 		056E201D1D53B1F40072592F /* SearchResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchResultsView.xib; path = ViewControllers/SearchResultsView/SearchResultsView.xib; sourceTree = "<group>"; };
+		056E20201D53B28D0072592F /* SearchResultsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsViewModel.swift; path = ViewControllers/SearchResultsView/SearchResultsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				056E201C1D53B1F40072592F /* SearchResultsView.swift */,
 				056E201D1D53B1F40072592F /* SearchResultsView.xib */,
+				056E20201D53B28D0072592F /* SearchResultsViewModel.swift */,
 			);
 			name = SearchResultsView;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				056E20171D53A54B0072592F /* SearchViewController.swift in Sources */,
 				056E20051D539F630072592F /* NetworkProvider.swift in Sources */,
 				056E20041D539F630072592F /* Network.swift in Sources */,
+				056E20211D53B28D0072592F /* SearchResultsViewModel.swift in Sources */,
 				056E20061D539F630072592F /* NetworkRequest.swift in Sources */,
 				056E1FE01D539AA40072592F /* AppDelegate.swift in Sources */,
 			);
