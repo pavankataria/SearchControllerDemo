@@ -23,6 +23,8 @@
 		056E20171D53A54B0072592F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E20151D53A54B0072592F /* SearchViewController.swift */; };
 		056E20181D53A54B0072592F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056E20161D53A54B0072592F /* SearchViewController.xib */; };
 		056E201A1D53A5570072592F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E20191D53A5570072592F /* SearchViewModel.swift */; };
+		056E201E1D53B1F40072592F /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E201C1D53B1F40072592F /* SearchResultsView.swift */; };
+		056E201F1D53B1F40072592F /* SearchResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056E201D1D53B1F40072592F /* SearchResultsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		056E20151D53A54B0072592F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ViewControllers/SearchView/SearchViewController.swift; sourceTree = "<group>"; };
 		056E20161D53A54B0072592F /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = ViewControllers/SearchView/SearchViewController.xib; sourceTree = "<group>"; };
 		056E20191D53A5570072592F /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = ViewControllers/SearchView/SearchViewModel.swift; sourceTree = "<group>"; };
+		056E201C1D53B1F40072592F /* SearchResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsView.swift; path = ViewControllers/SearchResultsView/SearchResultsView.swift; sourceTree = "<group>"; };
+		056E201D1D53B1F40072592F /* SearchResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchResultsView.xib; path = ViewControllers/SearchResultsView/SearchResultsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				056E200F1D53A38C0072592F /* NavigationController */,
 				056E20081D539FD80072592F /* FeedView */,
 				056E20141D53A5300072592F /* SearchView */,
+				056E201B1D53B1D60072592F /* SearchResultsView */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +173,15 @@
 				056E20161D53A54B0072592F /* SearchViewController.xib */,
 			);
 			name = SearchView;
+			sourceTree = "<group>";
+		};
+		056E201B1D53B1D60072592F /* SearchResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				056E201C1D53B1F40072592F /* SearchResultsView.swift */,
+				056E201D1D53B1F40072592F /* SearchResultsView.xib */,
+			);
+			name = SearchResultsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,7 @@
 			files = (
 				056E1FEA1D539AA40072592F /* LaunchScreen.storyboard in Resources */,
 				056E200C1D539FF50072592F /* FeedViewController.xib in Resources */,
+				056E201F1D53B1F40072592F /* SearchResultsView.xib in Resources */,
 				056E20181D53A54B0072592F /* SearchViewController.xib in Resources */,
 				056E1FE71D539AA40072592F /* Assets.xcassets in Resources */,
 			);
@@ -246,6 +261,7 @@
 				056E20001D539F630072592F /* Application.swift in Sources */,
 				056E200B1D539FF50072592F /* FeedViewController.swift in Sources */,
 				056E1FFF1D539F630072592F /* API.swift in Sources */,
+				056E201E1D53B1F40072592F /* SearchResultsView.swift in Sources */,
 				056E20031D539F630072592F /* Navigation.swift in Sources */,
 				056E200E1D53A1650072592F /* FeedViewModel.swift in Sources */,
 				056E201A1D53A5570072592F /* SearchViewModel.swift in Sources */,
