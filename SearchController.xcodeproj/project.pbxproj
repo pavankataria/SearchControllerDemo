@@ -12,8 +12,6 @@
 		056E1FEA1D539AA40072592F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056E1FE81D539AA40072592F /* LaunchScreen.storyboard */; };
 		056E1FFF1D539F630072592F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FF31D539F630072592F /* API.swift */; };
 		056E20001D539F630072592F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FF51D539F630072592F /* Application.swift */; };
-		056E20011D539F630072592F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FF71D539F630072592F /* ImageCache.swift */; };
-		056E20021D539F630072592F /* ImageCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FF81D539F630072592F /* ImageCacheProvider.swift */; };
 		056E20031D539F630072592F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FFA1D539F630072592F /* Navigation.swift */; };
 		056E20041D539F630072592F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FFC1D539F630072592F /* Network.swift */; };
 		056E20051D539F630072592F /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056E1FFD1D539F630072592F /* NetworkProvider.swift */; };
@@ -35,8 +33,6 @@
 		056E1FEB1D539AA40072592F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056E1FF31D539F630072592F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		056E1FF51D539F630072592F /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		056E1FF71D539F630072592F /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		056E1FF81D539F630072592F /* ImageCacheProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheProvider.swift; sourceTree = "<group>"; };
 		056E1FFA1D539F630072592F /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		056E1FFC1D539F630072592F /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		056E1FFD1D539F630072592F /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
@@ -94,10 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				056E1FF21D539F630072592F /* API */,
-				056E1FF41D539F630072592F /* Application */,
-				056E1FF61D539F630072592F /* ImageCache */,
-				056E1FF91D539F630072592F /* Navigation */,
 				056E1FFB1D539F630072592F /* Network */,
+				056E1FF41D539F630072592F /* Application */,
+				056E1FF91D539F630072592F /* Navigation */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				056E1FF51D539F630072592F /* Application.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		056E1FF61D539F630072592F /* ImageCache */ = {
-			isa = PBXGroup;
-			children = (
-				056E1FF71D539F630072592F /* ImageCache.swift */,
-				056E1FF81D539F630072592F /* ImageCacheProvider.swift */,
-			);
-			path = ImageCache;
 			sourceTree = "<group>";
 		};
 		056E1FF91D539F630072592F /* Navigation */ = {
@@ -256,14 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056E20021D539F630072592F /* ImageCacheProvider.swift in Sources */,
 				056E20111D53A38C0072592F /* NavigationController.swift in Sources */,
 				056E20001D539F630072592F /* Application.swift in Sources */,
 				056E200B1D539FF50072592F /* FeedViewController.swift in Sources */,
 				056E1FFF1D539F630072592F /* API.swift in Sources */,
 				056E20031D539F630072592F /* Navigation.swift in Sources */,
 				056E200E1D53A1650072592F /* FeedViewModel.swift in Sources */,
-				056E20011D539F630072592F /* ImageCache.swift in Sources */,
 				056E201A1D53A5570072592F /* SearchViewModel.swift in Sources */,
 				056E20171D53A54B0072592F /* SearchViewController.swift in Sources */,
 				056E20051D539F630072592F /* NetworkProvider.swift in Sources */,

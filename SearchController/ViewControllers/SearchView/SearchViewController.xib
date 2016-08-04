@@ -14,7 +14,72 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5D-C1-pIn">
+                    <rect key="frame" x="200" y="275" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="1Ei-ZO-rek"/>
+                        <constraint firstAttribute="height" constant="50" id="eFd-ng-0G5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-Qd-lYu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type for autocomplete list, select item to grab it's coordinate" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kr1-KB-xSp">
+                            <rect key="frame" x="87" y="35" width="493" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h17-VZ-jE5">
+                            <rect key="frame" x="19" y="35" width="48" height="30"/>
+                            <state key="normal" title="&lt; Back">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonPressed" destination="-1" eventType="touchUpInside" id="E3g-d1-MdO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose coordinate from a given list." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-HL-CWm">
+                            <rect key="frame" x="87" y="8" width="275" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99261486530303955" green="0.64922797679901123" blue="0.61515998840332031" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="uFe-HL-CWm" firstAttribute="top" secondItem="j1E-Qd-lYu" secondAttribute="top" constant="8" id="3lx-IP-eBF"/>
+                        <constraint firstItem="uFe-HL-CWm" firstAttribute="leading" secondItem="Kr1-KB-xSp" secondAttribute="leading" id="6VH-9h-cC9"/>
+                        <constraint firstItem="Kr1-KB-xSp" firstAttribute="top" secondItem="uFe-HL-CWm" secondAttribute="bottom" constant="6" id="AOd-xc-ffN"/>
+                        <constraint firstAttribute="trailing" secondItem="Kr1-KB-xSp" secondAttribute="trailing" constant="20" id="CJb-2K-2km"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="NZn-Dc-PZF"/>
+                        <constraint firstItem="h17-VZ-jE5" firstAttribute="centerY" secondItem="Kr1-KB-xSp" secondAttribute="centerY" id="R0B-8R-8gl"/>
+                        <constraint firstAttribute="height" constant="100" id="Y2b-nm-Ru2"/>
+                        <constraint firstItem="Kr1-KB-xSp" firstAttribute="leading" secondItem="h17-VZ-jE5" secondAttribute="trailing" constant="20" id="iDP-HW-74x"/>
+                        <constraint firstItem="Kr1-KB-xSp" firstAttribute="centerY" secondItem="j1E-Qd-lYu" secondAttribute="centerY" id="mCh-mI-gpX"/>
+                        <constraint firstItem="h17-VZ-jE5" firstAttribute="leading" secondItem="j1E-Qd-lYu" secondAttribute="leading" constant="19" id="vNL-7X-6mO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view will contain other search parameter options." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQN-uS-tL8">
+                    <rect key="frame" x="20" y="120" width="412" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.87471127510070801" green="0.97421050071716309" blue="0.99974572658538818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Y5D-C1-pIn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="COJ-7T-OkU"/>
+                <constraint firstAttribute="trailing" secondItem="j1E-Qd-lYu" secondAttribute="trailing" id="Dr1-lh-vwe"/>
+                <constraint firstItem="BQN-uS-tL8" firstAttribute="top" secondItem="j1E-Qd-lYu" secondAttribute="bottom" constant="20" id="RFM-9f-a1a"/>
+                <constraint firstItem="Y5D-C1-pIn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YEC-6W-LUn"/>
+                <constraint firstItem="j1E-Qd-lYu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="blf-iy-ZD7"/>
+                <constraint firstItem="j1E-Qd-lYu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eIc-Ht-dMN"/>
+                <constraint firstItem="BQN-uS-tL8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fXD-dP-RWz"/>
+            </constraints>
         </view>
     </objects>
 </document>

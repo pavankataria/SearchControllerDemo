@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
 
     //MARK: - Properties
     let viewModel: SearchViewModel
+    var didPressBackButton: (() -> Void)? = nil
     
     //MARK: - Lifecycle
     init(viewModel: SearchViewModel){
@@ -30,5 +31,7 @@ class SearchViewController: UIViewController {
     func bindToViewModel(){
         
     }
-
+    @IBAction func backButtonPressed(){
+        self.didPressBackButton?()
+    }
 }

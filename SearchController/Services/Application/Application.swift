@@ -18,7 +18,6 @@ class Application {
     )
     lazy var network = NetworkProvider(session: NSURLSession.sharedSession())
     lazy var api: API = API(network: self.network)
-    lazy var imageCache: ImageCache = ImageCacheProvider(network: self.network)
     
     //MARK: - Lifecycle
     init(window: UIWindow) {

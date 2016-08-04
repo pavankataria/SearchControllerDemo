@@ -31,24 +31,20 @@ class Navigation {
         let viewModel = FeedViewModel(
             api: self.application.api
         )
-        
         let instance = FeedViewController(viewModel: viewModel)
-        
         instance.didPressSearchBar = { [weak self] in
             self?.showSearchView()
         }
-        
         self.navigationController.pushViewController(instance, animated: false)
     }
     
     private func showSearchView(){
-        print("tapped on search view")
-//        let viewModel = SearchViewModel(/*current search configuration*/)
-//        
-//        let instance = SearchViewController(viewModel: viewModel)
-//        
-//        
-//        self.navigationController.pushViewController(instance, animated: false)
-
+        let viewModel = SearchViewModel(/*current search configuration*/)
+        let instance = SearchViewController(viewModel: viewModel)
+        instance.didPressBackButton = {[weak self] in
+            self?.navigationController.dismissViewControllerAnimated(true, completion: nil)
+            
+        }
+        self.navigationController.pushViewController(instance, animated: false)
     }
 }
